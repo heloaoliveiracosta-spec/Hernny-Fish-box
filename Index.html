@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Hernny Fish Box</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hernny Fish Box 🐟</h1>
+    <nav>
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('sobre')">Sobre Mim</button>
+      <button onclick="showPage('galeria')">Galeria</button>
+      <button onclick="showPage('personagens')">Personagens</button>
+      <button onclick="showPage('pesca')">Pesca 🎣</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HOME -->
+    <section id="home" class="pagina">
+      <h2>Bem-vindo ao Hernny Fish Box!</h2>
+      <p>Um lugar para meus desenhos, rascunhos e personagens. 🌊🐠</p>
+    </section>
+
+    <!-- SOBRE MIM -->
+    <section id="sobre" class="pagina" style="display:none;">
+      <h2>Sobre Mim</h2>
+      <p>Oi! Sou Hernny, adoro desenhar e criar personagens. Este é meu cantinho de arte!</p>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria" class="pagina" style="display:none;">
+      <h2>Galeria de Desenhos e Rascunhos</h2>
+      <div class="grid">
+        <img src="imagens/desenho1.jpg" alt="Desenho 1">
+        <img src="imagens/desenho2.jpg" alt="Desenho 2">
+        <img src="imagens/desenho3.jpg" alt="Desenho 3">
+        <img src="imagens/desenho4.jpg" alt="Desenho 4">
+      </div>
+    </section>
+
+    <!-- PERSONAGENS -->
+    <section id="personagens" class="pagina" style="display:none;">
+      <h2>Meus Personagens</h2>
+      <div class="grid">
+        <img src="imagens/personagem1.jpg" alt="Personagem 1">
+        <img src="imagens/personagem2.jpg" alt="Personagem 2">
+        <img src="imagens/personagem3.jpg" alt="Personagem 3">
+      </div>
+    </section>
+
+    <!-- MINIGAME PESCA -->
+    <section id="pesca" class="pagina" style="display:none;">
+      <h2>Minigame de Pesca 🎣</h2>
+      <canvas id="gameCanvas" width="400" height="300" style="border:1px solid #000;"></canvas>
+      <p>Clique para lançar a linha e pescar o peixe!</p>
+      <button onclick="resetGame()">Resetar</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
